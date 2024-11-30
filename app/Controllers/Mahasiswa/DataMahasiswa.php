@@ -134,4 +134,7 @@ public function update($id)
         
         return redirect()->to('/data-master-mahasiswa'); // Redirect setelah hapus
     }
+
+   
+
 }

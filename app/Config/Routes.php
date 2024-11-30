@@ -39,3 +39,5 @@ $routes->get('data-master-mahasiswa/hapus/(:num)', 'Mahasiswa\DataMahasiswa::hap
 
 // Rute untuk simpan data mahasiswa (POST)
 $routes->post('data-master-mahasiswa/simpan', 'Mahasiswa\DataMahasiswa::save');
+//excel
+$routes->get('dashboard/export_all', 'Dashboard::exportAll');
