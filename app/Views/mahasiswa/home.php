@@ -11,8 +11,12 @@
         <i class="fas fa-plus"></i> Tambah Data
     </a>
     <a href="<?php echo site_url('dashboard/export_all'); ?>" class="btn btn-sm" style="background-color: #045e1c; color:white;">
-        <i class="fas fa-file"> Excel</i>
+        <i class="fas fa-file-excel"> Excel</i>
     </a>
+    <a href="<?php echo site_url('dashboard/export_pdf'); ?>" class="btn btn-sm" style="background-color: #e3091e; color:white;">
+        <i class="fas fa-file-pdf"> PDF</i>
+    </a>
+
 
 </div>
 
@@ -60,15 +64,15 @@
                                 <td>
                                     <a href="<?= base_url('data-master-mahasiswa/edit/' . $mhs['id_mhs']); ?>"
                                         class="btn btn-warning btn-circle btn-sm">
-                                        <i class="fas fa-edit"></i> 
+                                        <i class="fas fa-edit"></i>
                                     </a>
                                     <a href="<?= base_url('data-master-mahasiswa/hapus/' . $mhs['id_mhs']); ?>"
                                         class="btn btn-danger btn-circle btn-sm"
                                         onclick="return confirm('Yakin ingin menghapus data ini?')">
-                                        <i class="fas fa-trash"></i> 
+                                        <i class="fas fa-trash"></i>
                                     </a>
                                     <a href="" class="btn btn-success btn-circle btn-sm">
-                                        <i class="fas fa-file"></i> 
+                                        <i class="fas fa-file"></i>
 
                                     </a>
 

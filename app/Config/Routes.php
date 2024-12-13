@@ -41,3 +41,9 @@ $routes->get('data-master-mahasiswa/hapus/(:num)', 'Mahasiswa\DataMahasiswa::hap
 $routes->post('data-master-mahasiswa/simpan', 'Mahasiswa\DataMahasiswa::save');
 //excel
 $routes->get('dashboard/export_all', 'Dashboard::exportAll');
+// pdf
+$routes->get('dashboard/export_pdf', 'Dashboard::exportToPDF');
+// Qr Code
+$routes->get('dashboard/export_qrcode/(:num)', 'Dashboard::exportQRCode/$1');
+
+

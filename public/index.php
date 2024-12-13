@@ -20,6 +20,9 @@ if (getcwd() . DIRECTORY_SEPARATOR !== FCPATH) {
     chdir(FCPATH);
 }
 
+require '../vendor/autoload.php';
+
+
 /*
  *---------------------------------------------------------------
  * BOOTSTRAP THE APPLICATION
